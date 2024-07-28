@@ -1,0 +1,50 @@
+body {
+    background-color: #f8f9fa;
+    min-height: 100vh;
+}
+
+#bingoCardContainer {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 5px;
+    max-width: 360px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.bingo-header {
+    font-weight: bolder;
+    font-size: 40px;
+    color: #FFF;
+    font-family: "Archivo Black", sans-serif;
+    font-weight: bolder;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: grey;
+    height: 60px;
+    width: 60px;
+    background: rgba(0, 0, 0, 0);
+    text-align: center;
+}
+
+.bingo-cell {
+    width: 60px;  /* Adjusted width */
+    height: 60px; /* Adjusted height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    font-size: 25px; /* Adjusted font size */
+    line-height: 25px;
+    border-radius: 5px;
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bolder;
+    font-style: normal;
+    cursor: pointer;
+}
+
+.marked {
+    background-color: #f5bb1b;
+    color: #000;
+}
